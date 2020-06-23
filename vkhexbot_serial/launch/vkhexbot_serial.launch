@@ -1,0 +1,6 @@
+<launch>
+  <node name="vkhexbot_serial"  pkg="vkhexbot_serial"  type="vkhexbot_serial" output="screen">
+    <param name="BAUDRATE" type="int" value="115200"/>
+    <param name="SERIAL_NAME" type ="string" value="/dev/vk_hexbot"/>
+  </node>
+</launch>

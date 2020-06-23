@@ -1,0 +1,8 @@
+<launch>
+    <!--mpu6050 data publish node-->
+	<include file="$(find vkhexbot_imu)/launch/imu.launch"/>
+
+    <!-- Publish static transform from base_link to imu_link -->
+    <node pkg="tf" type="static_transform_publisher" name="base_link_to_imu_link" args="0 0 0 0 0 0  /base_link /imu_link  100"/>
+
+</launch>

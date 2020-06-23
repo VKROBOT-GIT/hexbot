@@ -1,0 +1,15 @@
+<launch>
+    <arg name="config" default="hexbot"/>
+    <rosparam command="load" file="$(find vkhexbot_description)/params/$(arg config).yaml" />   
+    <param name="robot_description" command="$(find xacro)/xacro '$(find vkhexbot_description)/urdf/$(arg config)_model.xacro'" />
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+	<!--communicate with hexbot-->
+    <node pkg="vkhexbot_serial" type="vkhexbot_serial" name="vkhexbot_serial" output="screen">
+		<param name="linear_x_scale" type="double" value="0.87" />
+        <param name="linear_y_scale" type="double" value="0.95" />
+		<param name="angle_z_scale" type="double" value="1.0" />
+    </node>
+	
+</launch>

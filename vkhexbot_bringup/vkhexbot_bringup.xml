@@ -1,0 +1,9 @@
+<!-- hexapod_bringup publisher -->
+<library path="lib/vkhexbot_bringup">
+  <class name="vkhexbot_bringup/vkhexbot_bringup" type="vkhexbot_bringup" 
+    base_class_type="node::Node">
+    <description>
+      vkhexbot_bringup launcher.
+    </description>
+  </class>
+</library>

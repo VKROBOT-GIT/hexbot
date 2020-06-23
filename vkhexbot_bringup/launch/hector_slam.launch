@@ -1,0 +1,8 @@
+<launch>
+	
+	<include file="$(find vkhexbot_bringup)/launch/bringup.launch"/>
+
+	<include file="$(find ydlidar)/launch/lidar.launch"/>
+
+ 	<include file="$(find vkhexbot_bringup)/launch/include/hector_mapping.launch" />
+</launch>

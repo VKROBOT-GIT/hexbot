@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package>
+  <name>vkhexbot_serial</name>
+  <version>1.0.0</version>
+  <description>Serial node for a vkhexbot research platform</description>
+  <author email="kevin.ochs@gmail.com">Kevin</author>
+  <maintainer email="kevin.ochs@gmail.com">Kevin Ochs</maintainer>
+  <license>BSD</license>
+  
+  <url type="website">http://ros.org</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>nodelet</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>vkhexbot_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <run_depend>nodelet</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>vkhexbot_msgs</run_depend>
+
+  <export>
+    <nodelet plugin="${prefix}/vkhexbot_serial.xml" />
+  </export>
+</package>

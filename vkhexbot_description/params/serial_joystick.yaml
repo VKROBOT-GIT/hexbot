@@ -1,0 +1,71 @@
+# Joystick Configuration Settings
+# Default setup is a sixaxis controller
+# Use a program such as jstest-gtk to find out your preferred mappings
+# If you create a new one you can pass to the launch file with the joy_mapping arg.
+
+# "start" button
+STANDUP_BUTTON: 15
+
+# "select" button
+SITDOWN_BUTTON: 14
+
+# "L2" button
+BODY_ROTATION_BUTTON: 8
+
+# Left joystick up/down
+FORWARD_BACKWARD_AXES: 1
+
+# Left joystick right/left
+LEFT_RIGHT_AXES: 0
+
+# Right joystick right/left
+YAW_ROTATION_AXES: 2
+
+# Right joystick up/down
+PITCH_ROTATION_AXES: 3
+
+# Twist Max Values
+# Currently these are set from a topic echo of the "twist" message coming out of the locomotion node.
+#MAX_METERS_PER_SEC: 0.0723589
+MAX_METERS_PER_SEC: 0.048239
+#MAX_RADIANS_PER_SEC: !degrees 16.629
+MAX_RADIANS_PER_SEC: !degrees 0.6629
+
+# 遥控器按键
+SQUARE: 0
+CROSS: 1
+CIRCLE: 2
+TRIANGLE: 3
+R1: 4
+R2: 5
+R3: 6
+L3: 7
+L2: 8
+L1: 9
+UP: 10
+LEFT: 11
+DOWN: 12
+RIGHT: 13
+SELECT: 14
+START: 15 
+ROCK: 20
+
+# 按键数量
+KEY_COUNT: 16
+# 按键对应的数据长度
+KEY_DATA_LEN: 4
+# 摇杆对应的数据长度
+ROCK_DATA_LEN: 7
+# 摇杆推动范围
+ROCK_RANGE: 128
+# 协议帧头和帧尾
+PROTOCOL_HEADER: 204
+PROTOCOL_TAIL: 187
+# 串口波特率
+BAUDRATE: 9600
+
+#摇杆是否反向
+INVERT_FORWARD_BACKWARD_AXES: 0
+INVERT_LEFT_RIGHT_AXES: 0
+INVERT_YAW_ROTATION_AXES: 1
+INVERT_PITCH_ROTATION_AXES: 0

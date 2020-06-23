@@ -1,0 +1,6 @@
+image: /home/pi/vkrobot_ws/src/hexapod_bringup/maps/house20191111.pgm
+resolution: 0.050000
+origin: [-7.880090, -5.354041, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196

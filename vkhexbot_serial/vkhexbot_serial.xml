@@ -1,0 +1,9 @@
+<!-- hexapod_serial publisher -->
+<library path="lib/vkhexbot_serial">
+  <class name="vkhexbot_serial/vkhexbot_serial" type="vkhexbot_serial" 
+    base_class_type="node::Node">
+    <description>
+      vkhexbot serial publisher.
+    </description>
+  </class>
+</library>

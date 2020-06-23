@@ -1,0 +1,3 @@
+<launch>
+  <node name="hexbot_teleop_key"  pkg="vkhexbot_teleop"  type="hexbot_teleop_key" output="screen" />
+</launch>

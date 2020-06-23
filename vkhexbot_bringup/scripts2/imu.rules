@@ -1,0 +1,4 @@
+# set the udev rule , make the device_port be fixed by vk_imu
+#
+KERNELS=="1-1.3", KERNEL=="ttyUSB*", SUBSYSTEM=="tty",ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", MODE:="0777", SYMLINK+="vk_imu"
+

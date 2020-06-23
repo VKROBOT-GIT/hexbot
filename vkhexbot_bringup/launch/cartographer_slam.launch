@@ -1,0 +1,10 @@
+<launch>
+     <include file="$(find vkhexbot_bringup)/launch/bringup.launch"/>
+ <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser4" args="0.0 0.0 0.0 0.0 0.0  0.0 /laser_link /base_link 40" />
+
+	<!---run lidar node-->
+	<include file="$(find ydlidar)/launch/lidar.launch"/>
+
+	<include file="$(find cartographer_ros)/launch/demo_laser.launch" /> 
+	
+</launch>
