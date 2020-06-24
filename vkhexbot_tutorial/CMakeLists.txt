@@ -10,6 +10,10 @@ project(vkhexbot_tutorial)
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   roscpp
+  OpenCV
+  cv_bridge
+  image_transport
+  std_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -117,6 +121,7 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+  ${OpenCV_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
@@ -139,8 +144,14 @@ target_link_libraries(vel_control ${catkin_LIBRARIES})
 
 add_executable(read_lidar_data src/read_lidar_data.cpp )
 target_link_libraries(read_lidar_data ${catkin_LIBRARIES})
+add_executable(read_camera_data src/read_camera_data.cpp)
+target_link_libraries(read_camera_data ${catkin_LIBRARIES})
+add_executable(image_hsv_test src/image_hsv_test.cpp)
+target_link_libraries(image_hsv_test ${catkin_LIBRARIES})
 
 
+add_executable(color_track src/color_track.cpp)
+target_link_libraries(color_track ${catkin_LIBRARIES})
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
