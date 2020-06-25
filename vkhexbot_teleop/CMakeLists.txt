@@ -6,7 +6,7 @@ find_package( catkin REQUIRED COMPONENTS nodelet roscpp geometry_msgs nav_msgs s
 set(CMAKE_CXX_FLAGS "-std=c++0x ${CMAKE_CXX_FLAGS}")
 
 catkin_package(
-  INCLUDE_DIRS include
+  #INCLUDE_DIRS include
   LIBRARIES hexbot_teleop_key
   CATKIN_DEPENDS nodelet roscpp geometry_msgs sensor_msgs std_msgs 
 )
