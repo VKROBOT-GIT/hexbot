@@ -1,0 +1,6 @@
+<launch>
+
+  <node pkg="vkhexbot_gassensor" type="ccs811_serial_node" name="ccs811_serial_node" output="screen">
+  </node>
+
+</launch>

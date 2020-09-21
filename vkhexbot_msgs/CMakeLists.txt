@@ -15,6 +15,7 @@ add_message_files(
    FILES
    Buffer.msg
    Battery.msg
+   Gassensor.msg
  )
 
 
