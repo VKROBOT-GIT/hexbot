@@ -50,7 +50,7 @@ void Cam_RGB_Callback(const sensor_msgs::ImageConstPtr &msg)
     morphologyEx(imgThresholded, imgThresholded, MORPH_CLOSE, element);
 
     //ªÒ»°±ﬂΩÁ
-    std::vector<std::vector<Point>> contours;
+    std::vector< std::vector<Point> > contours;
     std::vector<Vec4i> hireachy;
     Rect rect;
     Point2f center;
